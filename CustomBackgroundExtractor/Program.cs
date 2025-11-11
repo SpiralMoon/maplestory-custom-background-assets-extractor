@@ -197,7 +197,7 @@ try
         customBackground.IsAnimationCard = isAnimationCard;
         customBackground.HasNameplace = hasNameplace;
         customBackground.HasBorderLine = hasBorderLine;
-        customBackground.LeftInfoFontColor = leftInfoFontColor;
+        customBackground.LeftLabelFontColor = leftLabelFontColor;
         customBackground.LeftLabelBorderLine = leftLabelBorderLine;
         customBackground.LeftLabelBorderLineColor = leftLabelBorderLineColor;
         customBackground.LeftInfoFontColor = leftInfoFontColor;
