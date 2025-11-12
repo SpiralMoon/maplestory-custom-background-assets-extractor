@@ -117,7 +117,7 @@ try
             Wz_Node nodeFrameCanvas = nodeFrame.GetLinkedSourceNode(wzFile);
             Wz_Png pngFrame = nodeFrameCanvas.GetValue<Wz_Png>();
 
-            pngFrame.SaveToPng(Path.Combine(imagesDir, $"{nodeFrameCanvas.FullPath.Replace("\\", ".")}.png"));
+            pngFrame.SaveToPng(Path.Combine(imagesDir, $"{nodeFrame.FullPath.Replace("\\", ".")}.png"));
         }
 
         Wz_Node nodeNameplace = nodeCustomBackground.Nodes["nameplace"];
@@ -142,7 +142,7 @@ try
                 Wz_Node nodeFrameCanvas = nodeFrame.GetLinkedSourceNode(wzFile);
                 Wz_Png pngFrame = nodeFrameCanvas.GetValue<Wz_Png>();
 
-                pngFrame.SaveToPng(Path.Combine(imagesDir, $"{nodeFrameCanvas.FullPath.Replace("\\", ".")}.png"));
+                pngFrame.SaveToPng(Path.Combine(imagesDir, $"{nodeFrame.FullPath.Replace("\\", ".")}.png"));
             }
         }
 
@@ -162,7 +162,7 @@ try
                 Wz_Node nodeFrameCanvas = nodeFrame.GetLinkedSourceNode(wzFile);
                 Wz_Png pngFrame = nodeFrameCanvas.GetValue<Wz_Png>();
 
-                pngFrame.SaveToPng(Path.Combine(imagesDir, $"{nodeFrameCanvas.FullPath.Replace("\\", ".")}.png"));
+                pngFrame.SaveToPng(Path.Combine(imagesDir, $"{nodeFrame.FullPath.Replace("\\", ".")}.png"));
             }
         }
 
@@ -181,7 +181,7 @@ try
             Wz_Node nodeFrameCanvas = nodeFrame.GetLinkedSourceNode(wzFile);
             Wz_Png pngFrame = nodeFrameCanvas.GetValue<Wz_Png>();
 
-            pngFrame.SaveToPng(Path.Combine(imagesDir, $"{nodeFrameCanvas.FullPath.Replace("\\", ".")}.png"));
+            pngFrame.SaveToPng(Path.Combine(imagesDir, $"{nodeFrame.FullPath.Replace("\\", ".")}.png"));
         }
 
         bool isAnimationCard = 1 < nodeImage2Frames.Count;
