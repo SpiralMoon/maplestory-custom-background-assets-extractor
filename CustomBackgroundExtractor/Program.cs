@@ -218,7 +218,7 @@ try
         customBackground.LeftLabelBorderLine = leftLabelBorderLine;
         customBackground.LeftLabelBorderLineColor = leftLabelBorderLineColor;
         customBackground.LeftInfoFontColor = leftInfoFontColor;
-        customBackground.RightLabelFontColor = rightInfoFontColor;
+        customBackground.RightLabelFontColor = rightLabelFontColor;
         customBackground.RightLabelBorderLine = rightLabelBorderLine;
         customBackground.RightLabelBorderLineColor = rightLabelBorderLineColor;
         customBackground.RightInfoFontColor = rightInfoFontColor;
