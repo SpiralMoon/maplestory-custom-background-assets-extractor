@@ -60,6 +60,14 @@ $ dotnet run
     {
       "code": "23",
       "name": "메이플 대학교",
+      "background_image_frames": [
+        "0"
+      ],
+      "card_image_frames": [
+        "0"
+      ],
+      "nameplace_image_frames": [],
+      "border_line_image_frames": [],
       "is_animation_card": false,
       "has_nameplace": false,
       "has_border_line": false,

@@ -19,6 +19,18 @@ namespace CustomBackgroundExtractor
         [JsonProperty("name")]
         public string Name { get; set; } = string.Empty;
 
+        [JsonProperty("background_image_frames")]
+        public List<string> BackgroundImageFrames { get; set; } = new List<string>();
+
+        [JsonProperty("card_image_frames")]
+        public List<string> CardImageFrames { get; set; } = new List<string>();
+
+        [JsonProperty("nameplace_image_frames")]
+        public List<string> NameplaceImageFrames { get; set; } = new List<string>();
+
+        [JsonProperty("border_line_image_frames")]
+        public List<string> BorderLineImageFrames { get; set; } = new List<string>();
+
         [JsonProperty("is_animation_card")]
         public bool IsAnimationCard { get; set; } = false;
 

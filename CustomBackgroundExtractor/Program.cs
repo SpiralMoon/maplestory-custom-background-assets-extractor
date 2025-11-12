@@ -97,6 +97,11 @@ try
         // Extract and save to .png file
         pngIconRaw.SaveToPng(Path.Combine(imagesDir, $"{nodeCustomBackground.FullPath.Replace("\\", ".")}.icon.png"));
 
+        List<string> backgroundImageFrames = [];
+        List<string> cardImageFrames = [];
+        List<string> nameplaceImageFrames = [];
+        List<string> borderLineImageFrames = [];
+
         // custom background (character stat info ui)
         Wz_Node nodeImage = nodeCustomBackground.Nodes["image"];
 
@@ -104,6 +109,8 @@ try
             .Where(node => int.TryParse(node.Text, out _))
             .OrderBy(node => int.Parse(node.Text))
             .ToList();
+
+        backgroundImageFrames = nodeImageFrames.Select(node => node.Text).ToList();
 
         foreach (Wz_Node nodeFrame in nodeImageFrames)
         {
@@ -128,6 +135,8 @@ try
                 .OrderBy(node => int.Parse(node.Text))
                 .ToList();
 
+            nameplaceImageFrames = nodeNameplaceFrames.Select(node => node.Text).ToList();
+
             foreach (Wz_Node nodeFrame in nodeNameplaceFrames)
             {
                 Wz_Node nodeFrameCanvas = nodeFrame.GetLinkedSourceNode(wzFile);
@@ -146,6 +155,8 @@ try
                 .OrderBy(node => int.Parse(node.Text))
                 .ToList();
 
+            borderLineImageFrames = nodeBorderLineFrames.Select(node => node.Text).ToList();
+
             foreach (Wz_Node nodeFrame in nodeBorderLineFrames)
             {
                 Wz_Node nodeFrameCanvas = nodeFrame.GetLinkedSourceNode(wzFile);
@@ -162,6 +173,8 @@ try
             .Where(node => int.TryParse(node.Text, out _))
             .OrderBy(node => int.Parse(node.Text))
             .ToList();
+
+        cardImageFrames = nodeImage2Frames.Select(node => node.Text).ToList();
 
         foreach (Wz_Node nodeFrame in nodeImage2Frames)
         {
@@ -195,6 +208,10 @@ try
         customBackground.Code = code;
         customBackground.Name = name;
         customBackground.IsAnimationCard = isAnimationCard;
+        customBackground.BackgroundImageFrames = backgroundImageFrames;
+        customBackground.CardImageFrames = cardImageFrames;
+        customBackground.NameplaceImageFrames = nameplaceImageFrames;
+        customBackground.BorderLineImageFrames = borderLineImageFrames;
         customBackground.HasNameplace = hasNameplace;
         customBackground.HasBorderLine = hasBorderLine;
         customBackground.LeftLabelFontColor = leftLabelFontColor;
