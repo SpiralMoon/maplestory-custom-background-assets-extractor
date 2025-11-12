@@ -188,21 +188,21 @@ try
 
         string name = nodeCustomBackground.Nodes["name"].GetValue<string>();
 
-        string leftLabelFontColor = nodeCustomBackground.FindNodeByPath("Leftlabel\\fontColor")?.GetValue<string>() ?? "";
+        string leftLabelFontColor = $"#{nodeCustomBackground.FindNodeByPath("Leftlabel\\fontColor")?.GetValue<string>()}";
         int leftLabelBorderLine = nodeCustomBackground.FindNodeByPath("Leftlabel\\borderline")?.GetValue<int>() ?? 0;
-        string leftLabelBorderLineColor = nodeCustomBackground.FindNodeByPath("Leftlabel\\borderlinecolor")?.GetValue<string>() ?? "";
-        string leftInfoFontColor = nodeCustomBackground.FindNodeByPath("LeftInfo\\fontColor")?.GetValue<string>() ?? "";
+        string leftLabelBorderLineColor = $"#{nodeCustomBackground.FindNodeByPath("Leftlabel\\borderlinecolor")?.GetValue<string>()}";
+        string leftInfoFontColor = $"#{nodeCustomBackground.FindNodeByPath("LeftInfo\\fontColor")?.GetValue<string>()}";
 
-        string rightLabelFontColor = nodeCustomBackground.FindNodeByPath("Rightlabel\\fontColor")?.GetValue<string>() ?? "";
+        string rightLabelFontColor = $"#{nodeCustomBackground.FindNodeByPath("Rightlabel\\fontColor")?.GetValue<string>()}";
         int rightLabelBorderLine = nodeCustomBackground.FindNodeByPath("Rightlabel\\borderline")?.GetValue<int>() ?? 0;
-        string rightLabelBorderLineColor = nodeCustomBackground.FindNodeByPath("Rightlabel\\borderlinecolor")?.GetValue<string>() ?? "";
-        string rightInfoFontColor = nodeCustomBackground.FindNodeByPath("Rightinfo\\fontColor")?.GetValue<string>() ?? "";
+        string rightLabelBorderLineColor = $"#{nodeCustomBackground.FindNodeByPath("Rightlabel\\borderlinecolor")?.GetValue<string>()}";
+        string rightInfoFontColor = $"#{nodeCustomBackground.FindNodeByPath("Rightinfo\\fontColor")?.GetValue<string>()}";
 
-        string levelFontColor = nodeCustomBackground.FindNodeByPath("Level\\fontColor")?.GetValue<string>() ?? "";
-        string jobFontColor = nodeCustomBackground.FindNodeByPath("Job\\fontColor")?.GetValue<string>() ?? "";
-        string nameFontColor = nodeCustomBackground.FindNodeByPath("Name\\fontColor")?.GetValue<string>() ?? "";
+        string levelFontColor = $"#{nodeCustomBackground.FindNodeByPath("Level\\fontColor")?.GetValue<string>()}";
+        string jobFontColor = $"#{nodeCustomBackground.FindNodeByPath("Job\\fontColor")?.GetValue<string>()}";
+        string nameFontColor = $"#{nodeCustomBackground.FindNodeByPath("Name\\fontColor")?.GetValue<string>()}";
         int nameBorderLine = nodeCustomBackground.FindNodeByPath("Name\\borderline")?.GetValue<int>() ?? 0;
-        string nameBorderLineColor = nodeCustomBackground.FindNodeByPath("Name\\borderlinecolor")?.GetValue<string>() ?? "";
+        string nameBorderLineColor = $"#{nodeCustomBackground.FindNodeByPath("Name\\borderlinecolor")?.GetValue<string>()}";
 
         CustomBackground customBackground = new CustomBackground();
         customBackground.Code = code;

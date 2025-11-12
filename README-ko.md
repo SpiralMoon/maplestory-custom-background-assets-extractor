@@ -73,17 +73,17 @@ $ dotnet run
       "has_border_line": false,
       "left_label_font_color": "",
       "left_label_border_line": 5,
-      "left_label_border_line_color": "8826C0",
-      "left_info_font_color": "FFFFFF",
-      "right_label_font_color": "FFFFFF",
+      "left_label_border_line_color": "#8826C0",
+      "left_info_font_color": "#FFFFFF",
+      "right_label_font_color": "#FFFFFF",
       "right_label_border_line": 5,
-      "right_label_border_line_color": "8826C0",
-      "right_info_font_color": "FFFFFF",
-      "level_font_color": "FFFFFF",
-      "job_font_color": "FFFFFF",
-      "name_font_color": "FFFFFF",
+      "right_label_border_line_color": "#8826C0",
+      "right_info_font_color": "#FFFFFF",
+      "level_font_color": "#FFFFFF",
+      "job_font_color": "#FFFFFF",
+      "name_font_color": "#FFFFFF",
       "name_border_line": 100,
-      "name_border_line_color": "3CC1D7"
+      "name_border_line_color": "#3CC1D7"
     },
     ... other custom backgrounds
   ]
