@@ -52,7 +52,7 @@ $ dotnet run
   <img width="912" height="539" alt="image" src="https://github.com/user-attachments/assets/4549ed89-7ca7-404e-a7e4-c43e9e5fffd2" />
 
 ### Custom Background Information
-- 출력 위치: `output/ring.json`
+- 출력 위치: `output/custom_background.json`
 
 ```json
 {
